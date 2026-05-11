@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sabrina Hssaïd — Portfolio BTS SIO</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="portfolio2.css">
+</head>
+<body>
+
+<!-- BOUTON CLAIR / SOMBRE -->
+<button class="theme-toggle" id="themeToggle" aria-label="Changer le thème">
+  <span class="theme-toggle-icon" id="themeIcon">☀️</span>
+  <span class="theme-toggle-label" id="themeLabel">Clair</span>
+</button>
+
+<!-- SIDEBAR NAV -->
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-logo">
+    <span class="logo-s">sbr la star </span>
+  </div>
+  <nav class="sidebar-nav">
+    <a href="#accueil"        class="nav-item active" data-section="accueil">
+      <span class="nav-label">Accueil</span>
+    </a>
+    <a href="#parcours"       class="nav-item" data-section="parcours">
+      <span class="nav-label">Parcours</span>
+    </a>
+    <a href="#certifications" class="nav-item" data-section="certifications">
+      <span class="nav-label">Certifications</span>
+    </a>
+    <a href="#competences"    class="nav-item" data-section="competences">
+      <span class="nav-label">Compétences</span>
+    </a>
+    <a href="#veille"         class="nav-item" data-section="veille">
+      <span class="nav-label">Veille techno.</span>
+    </a>
+    <a href="#stage"          class="nav-item" data-section="stage">
+      <span class="nav-label">Suivi de stage</span>
+    </a>
+    <a href="#cv"             class="nav-item" data-section="cv">
+      <span class="nav-label">CV</span>
+    </a>
+    <a href="#contact"        class="nav-item" data-section="contact">
+      <span class="nav-label">Contact</span>
+    </a>
+  </nav>
+  <div class="sidebar-footer">BTS SIO · 2026</div>
+</aside>
+
+<!-- MOBILE TOPBAR -->
+<div class="topbar">
+  <span class="logo-s" style="font-family:'DM Serif Display',serif;font-size:1.5rem;color:var(--accent2);">S</span>
+  <button class="menu-btn" id="menuBtn">☰</button>
+</div>
+<div class="mobile-overlay" id="mobileOverlay"></div>
+
+<!-- MAIN -->
+<main class="main">
+
+  <!-- ══════ ACCUEIL ══════ -->
+  <section id="accueil" class="section section--hero">
+    <div class="hero-bg-text">BTS SIO</div>
+    <div class="hero-inner">
+      <div class="hero-left">
+        <div class="hero-tag">Portfolio · BTS SIO SLAM</div>
+        <h1 class="hero-name">Sabrina<br><em>Hssaïd</em></h1>
+        <p class="hero-sub">Étudiante en 1ᵉ année de BTS SIO, option SLAM — passionnée par le développement web, les bases de données et la cybersécurité.</p>
+        <div class="hero-chips">
+          <span class="chip">PHP / MySQL</span>
+          <span class="chip">Java</span>
+          <span class="chip">HTML · CSS · JS</span>
+          <span class="chip">Git & GitHub</span>
+        </div>
+        <div class="hero-cta">
+          <a href="#parcours" class="btn-main">Découvrir →</a>
+          <a href="#cv" class="btn-line">Voir le CV</a>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="hero-card">
+          <span class="hcard-avatar">👩‍💻</span>
+          <div class="hcard-info">
+            <div class="hcard-row"><span class="hcard-key">formation</span><span class="hcard-val">"BTS SIO"</span></div>
+            <div class="hcard-row"><span class="hcard-key">option</span><span class="hcard-val">"SLAM"</span></div>
+            <div class="hcard-row"><span class="hcard-key">promo</span><span class="hcard-val">"2025 – 2027"</span></div>
+            <div class="hcard-row"><span class="hcard-key">localisation</span><span class="hcard-val">"France"</span></div>
+            <div class="hcard-row"><span class="hcard-key">statut</span><span class="hcard-val hcard-green">"Disponible stage"</span></div>
+          </div>
+        </div>
+        <div class="hero-stat-grid">
+          <div class="hstat"><span class="hstat-n">5+</span><span class="hstat-l">Projets</span></div>
+          <div class="hstat"><span class="hstat-n">2</span><span class="hstat-l">Certifs</span></div>
+          <div class="hstat"><span class="hstat-n">6</span><span class="hstat-l">Langages</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════ PARCOURS ══════ -->
+  <section id="parcours" class="section">
+    <div class="section-head">
+      <span class="section-num">02</span>
+      <h2 class="section-title">Parcours</h2>
+    </div>
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-date">20XX – 20XX</div>
+        <div class="tl-card">
+          <div class="tl-badge">Collège</div>
+          <h3 class="tl-title">Brevet des Collèges</h3>
+          <p class="tl-desc">Collège Saint-Paul.</p>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-date">20XX – 20XX</div>
+        <div class="tl-card">
+          <div class="tl-badge">Lycée</div>
+          <h3 class="tl-title">Baccalauréat</h3>
+          <p class="tl-desc">Lycée Tezena du montcel </p>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot tl-dot--active"></div>
+        <div class="tl-date">2025 – 2027</div>
+        <div class="tl-card tl-card--active">
+          <div class="tl-badge tl-badge--active">En cours ●</div>
+          <h3 class="tl-title">BTS SIO — option SLAM</h3>
+          <p class="tl-desc">Lycée georges brassens. Formation aux Services Informatiques aux Organisations, spécialité Solutions Logicielles et Applications Métiers.</p>
+          <div class="tl-tags">
+            <span class="tag tag--active">SLAM</span>
+            <span class="tag">PHP</span><span class="tag">Java</span>
+            <span class="tag">MySQL</span><span class="tag">Réseaux</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════ CERTIFICATIONS ══════ -->
+  <section id="certifications" class="section section--alt">
+    <div class="section-head">
+      <span class="section-num">03</span>
+      <h2 class="section-title">Certifications</h2>
+    </div>
+    <div class="certif-grid">
+      <div class="certif-card">
+        <div class="certif-logo certif-logo--cnil">CNIL</div>
+        <div class="certif-body">
+          <h3 class="certif-name">Atelier CNIL — Protection des données</h3>
+          <p class="certif-org">Commission Nationale de l'Informatique et des Libertés</p>
+          <p class="certif-desc">Formation aux principes du RGPD, aux droits des personnes et aux obligations des organisations traitant des données personnelles.</p>
+          <div class="certif-tags"><span class="tag">RGPD</span><span class="tag">Données personnelles</span><span class="tag">Conformité</span></div>
+        </div>
+        <div class="certif-stamp">✓ Obtenu</div>
+      </div>
+      <div class="certif-card">
+        <div class="certif-logo certif-logo--anssi">ANSSI</div>
+        <div class="certif-body">
+          <h3 class="certif-name">SecNumacadémie</h3>
+          <p class="certif-org">Agence Nationale de la Sécurité des Systèmes d'Information</p>
+          <p class="certif-desc">MOOC sur la cybersécurité couvrant les fondamentaux : risques, authentification, réseaux sécurisés, cryptographie et gestion des incidents.</p>
+          <div class="certif-tags"><span class="tag">Cybersécurité</span><span class="tag">Réseaux</span><span class="tag">Cryptographie</span></div>
+        </div>
+        <div class="certif-stamp">✓ Obtenu</div>
+      </div>
+      <div class="certif-card certif-card--placeholder">
+        <div class="certif-logo certif-logo--ph">?</div>
+        <div class="certif-body">
+          <h3 class="certif-name">[Certification à venir]</h3>
+          <p class="certif-org">Organisation [À compléter]</p>
+          <p class="certif-desc">Ajoute ici une certification en cours ou planifiée.</p>
+        </div>
+        <div class="certif-stamp certif-stamp--soon">En cours</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════ E5 ══════ -->
+  <section id="e5" class="section">
+    <div class="section-head">
+      <span class="section-num">04</span>
+      <h2 class="section-title">Épreuve E5</h2>
+      <p class="section-sub">Support et mise à disposition de services informatiques</p>
+    </div>
+    <div class="epreuve-intro">
+      <div class="epreuve-def">
+        <h3>Qu'est-ce que l'E5 ?</h3>
+        <p>L'épreuve E5 évalue les compétences en support et gestion des services informatiques. Elle porte sur la gestion du patrimoine informatique, la réponse aux incidents, la mise en place de solutions et l'exploitation des données.</p>
+      </div>
+    </div>
+    <div class="situation-grid">
+      <div class="situ-card">
+        <div class="situ-num">01</div>
+        <h3 class="situ-title">Situation professionnelle — [À compléter]</h3>
+        <p class="situ-context"><strong>Contexte :</strong> [Décris la situation : entreprise, besoin, contexte.]</p>
+        <p class="situ-mission"><strong>Mission :</strong> [Ce que tu as réalisé concrètement.]</p>
+        <div class="situ-compet"><span class="tag">Compétence A1.1</span><span class="tag">[Compétence]</span></div>
+        <a href="#" class="situ-link">Voir le dossier →</a>
+      </div>
+      <div class="situ-card">
+        <div class="situ-num">02</div>
+        <h3 class="situ-title">Situation professionnelle — [À compléter]</h3>
+        <p class="situ-context"><strong>Contexte :</strong> [Décris la situation.]</p>
+        <p class="situ-mission"><strong>Mission :</strong> [Ce que tu as réalisé.]</p>
+        <div class="situ-compet"><span class="tag">[Compétence]</span><span class="tag">[Compétence]</span></div>
+        <a href="#" class="situ-link">Voir le dossier →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════ E6 ══════ -->
+  <section id="e6" class="section section--alt">
+    <div class="section-head">
+      <span class="section-num">05</span>
+      <h2 class="section-title">Épreuve E6</h2>
+      <p class="section-sub">Cybersécurité des services informatiques</p>
+    </div>
+    <div class="epreuve-intro">
+      <div class="epreuve-def">
+        <h3>Qu'est-ce que l'E6 ?</h3>
+        <p>L'épreuve E6 est consacrée à la cybersécurité. Elle évalue la capacité à protéger les systèmes d'information, à réagir aux menaces, à mettre en œuvre des politiques de sécurité et à sensibiliser les utilisateurs.</p>
+      </div>
+    </div>
+    <div class="situation-grid">
+      <div class="situ-card situ-card--cyber">
+        <div class="situ-num">01</div>
+        <h3 class="situ-title">Situation cybersécurité — [À compléter]</h3>
+        <p class="situ-context"><strong>Contexte :</strong> [Décris la situation : menace, vulnérabilité, audit...]</p>
+        <p class="situ-mission"><strong>Mission :</strong> [Actions mises en place pour sécuriser.]</p>
+        <div class="situ-compet"><span class="tag tag--cyber">Sécurité réseau</span><span class="tag tag--cyber">[Compétence]</span></div>
+        <a href="#" class="situ-link">Voir le dossier →</a>
+      </div>
+      <div class="situ-card situ-card--cyber">
+        <div class="situ-num">02</div>
+        <h3 class="situ-title">Situation cybersécurité — [À compléter]</h3>
+        <p class="situ-context"><strong>Contexte :</strong> [Décris la situation.]</p>
+        <p class="situ-mission"><strong>Mission :</strong> [Ce que tu as mis en place.]</p>
+        <div class="situ-compet"><span class="tag tag--cyber">[Compétence]</span></div>
+        <a href="#" class="situ-link">Voir le dossier →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════ COMPÉTENCES ══════ -->
+  <section id="competences" class="section">
+    <div class="section-head">
+      <span class="section-num">06</span>
+      <h2 class="section-title">Compétences</h2>
+    </div>
+
+    <!-- Barres de compétences -->
+    <div class="comp-grid">
+      <div class="comp-col">
+        <h3 class="comp-group">Développement</h3>
+        <div class="skill-item">
+          <div class="skill-top"><span class="skill-name">HTML / CSS</span><span class="skill-pct">70%</span></div>
+          <div class="skill-bar"><div class="skill-fill" style="width:70%"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-top"><span class="skill-name">JavaScript</span><span class="skill-pct">50%</span></div>
+          <div class="skill-bar"><div class="skill-fill" style="width:50%"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-top"><span class="skill-name">PHP</span><span class="skill-pct">55%</span></div>
+          <div class="skill-bar"><div class="skill-fill" style="width:55%"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-top"><span class="skill-name">Java</span><span class="skill-pct">45%</span></div>
+          <div class="skill-bar"><div class="skill-fill" style="width:45%"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-top"><span class="skill-name">SQL / MySQL</span><span class="skill-pct">55%</span></div>
+          <div class="skill-bar"><div class="skill-fill" style="width:55%"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-top"><span class="skill-name">Python</span><span class="skill-pct">35%</span></div>
+          <div class="skill-bar"><div class="skill-fill" style="width:35%"></div></div>
+        </div>
+      </div>
+      <div class="comp-col">
+        <h3 class="comp-group">Outils & Systèmes</h3>
+        <div class="skill-item">
+          <div class="skill-top"><span class="skill-name">Git / GitHub</span><span class="skill-pct">60%</span></div>
+          <div class="skill-bar"><div class="skill-fill" style="width:60%"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-top"><span class="skill-name">Linux (Debian)</span><span class="skill-pct">45%</span></div>
+          <div class="skill-bar"><div class="skill-fill" style="width:45%"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-top"><span class="skill-name">XAMPP / Apache</span><span class="skill-pct">55%</span></div>
+          <div class="skill-bar"><div class="skill-fill" style="width:55%"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-top"><span class="skill-name">GLPI</span><span class="skill-pct">40%</span></div>
+          <div class="skill-bar"><div class="skill-fill" style="width:40%"></div></div>
+        </div>
+        <h3 class="comp-group" style="margin-top:2rem;">Langues</h3>
+        <div class="skill-item">
+          <div class="skill-top"><span class="skill-name">Français</span><span class="skill-pct">Natif</span></div>
+          <div class="skill-bar"><div class="skill-fill" style="width:100%"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-top"><span class="skill-name">Anglais</span><span class="skill-pct">B1</span></div>
+          <div class="skill-bar"><div class="skill-fill" style="width:55%"></div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══ CARROUSEL LOGOS TECH ══ -->
+    <div class="tech-carousel-section">
+      <h3 class="tech-carousel-label">Technologies maîtrisées</h3>
+      <div class="tech-carousel-wrap">
+        <div class="tech-carousel" id="techCarousel">
+
+          <!-- GitHub -->
+          <div class="tech-logo">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill="#1c1e2e" d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3z"/>
+            </svg>
+            <span class="tech-logo-label">GitHub</span>
+          </div>
+
+          <!-- HTML5 -->
+          <div class="tech-logo">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path fill="#e34f26" d="M1.5 0h21l-1.9 21.6L12 24l-8.6-2.4L1.5 0zm7.1 10.2-.2-2.5H17l-.2 2.1-4.8 1.3 4.6-.1-.3 3.4-4.3 1.2-4.3-1.2-.3-3h2.5l.1 1.4 2 .5 2-.5.2-2.3-7.6.1zm-.5-5.1.2 2.1h9.4l.2-2.1H8.1z"/>
+            </svg>
+            <span class="tech-logo-label">HTML5</span>
+          </div>
+
+          <!-- CSS3 -->
+          <div class="tech-logo">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path fill="#1572b6" d="M1.5 0h21l-1.9 21.6L12 24l-8.6-2.4L1.5 0zm13.9 14.7-4.6 1.3-4.5-1.3-.3-3.3h2.5l.1 1.5 2.2.6 2.2-.6.2-2.7H7.9l-.2-2.4h8.3l.2-2.2H5.8l-.2-2h12.8l-.8 9.1z"/>
+            </svg>
+            <span class="tech-logo-label">CSS3</span>
+          </div>
+
+          <!-- JavaScript -->
+          <div class="tech-logo">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <rect width="24" height="24" rx="2" fill="#f7df1e"/>
+              <path fill="#1c1e2e" d="M6.5 18.5c.4.7 1 1.2 2 1.2 1.1 0 1.7-.5 1.7-1.3 0-.9-.7-1.2-1.8-1.7l-.6-.3c-1.8-.8-3-1.7-3-3.7 0-1.8 1.4-3.2 3.6-3.2 1.6 0 2.7.6 3.5 2l-1.9 1.2c-.4-.7-.9-1-1.6-1-.7 0-1.2.4-1.2 1 0 .7.4 1 1.5 1.4l.6.3c2.1.9 3.3 1.8 3.3 3.9 0 2.2-1.7 3.4-4 3.4-2.2 0-3.7-1.1-4.4-2.5l2.3-1.7zm9 .3c.3.6.6.9 1.2.9.6 0 1-.2 1-1.2V9.8h2.5v8.8c0 2.3-1.3 3.3-3.3 3.3-1.8 0-2.9-.9-3.4-2l2-1.1z"/>
+            </svg>
+            <span class="tech-logo-label">JavaScript</span>
+          </div>
+
+          <!-- Java -->
+          <div class="tech-logo">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path fill="#f89820" d="M8.9 17.5s-.9.5.6.7c1.8.2 2.8.2 4.8-.2 0 0 .5.3 1.3.6-4.6 2-10.4-.1-6.7-1.1zm-.5-2.4s-1 .7.5.9c2 .2 3.5.2 6.2-.3 0 0 .4.4 1 .5-5.5 1.6-11.6.1-7.7-1.1z"/>
+              <path fill="#ea2d2e" d="M13.3 9.4c1.1 1.3-.3 2.4-.3 2.4s2.9-1.5 1.5-3.3c-1.2-1.7-2.2-2.6 3-5.5 0 0-8.2 2-4.2 6.4z"/>
+              <path fill="#f89820" d="M19.3 19.1s.7.6-.7.9c-2.6.8-10.7 1-13 0-.8-.3.7-.8 1.2-.9.5-.1.8-.1.8-.1-.9-.6-6 1.3-2.6 1.9 9.4 1.5 17.1-.7 14.3-1.8zm-10-7.2s-4.2 1-1.5 1.4c1.1.1 3.4.1 5.4-.1 1.7-.2 3.4-.5 3.4-.5s-.6.3-1 .5c-4.1 1.1-12 .6-9.7-.5 2-1 3.4-.8 3.4-.8zm7.4 4.1c4.2-2.2 2.3-4.3.9-4 1.4-.2 3.4 1.8.9 3.3-.1.1-.9.7-.9.7l.9-.5c1.4-.8 2-1.8-.9-4"/>
+              <path fill="#ea2d2e" d="M14.8 0s2.4 2.4-2.3 6.1c-3.8 3-1.8 4.7 0 6.6C10 10.5 7.5 9 9.3 7.1 11.9 4.5 16.2 2.6 14.8 0z"/>
+              <path fill="#f89820" d="M9.7 21.8c4 .3 10.2-.2 10.3-1.2 0 0-.3.7-3.3 1.2-3.4.6-7.5.5-10-.1 0 0 .5.4 3 .1z"/>
+            </svg>
+            <span class="tech-logo-label">Java</span>
+          </div>
+
+          <!-- PHP -->
+          <div class="tech-logo">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <ellipse cx="12" cy="12" rx="12" ry="7.5" fill="#787cb5"/>
+              <path fill="#fff" d="M5.8 15l.7-3.8H5.2l.1-.8h4.4c1.1 0 1.8.6 1.6 1.7-.3 1.6-1.3 2.3-2.8 2.3H7.2L7 15.7H5.8L5.8 15zm1.6-1.6h1c.7 0 1.2-.3 1.3-1 .1-.5-.2-.8-.9-.8h-.9l-.5 1.8zm5.8-2.2.1-.8h4.4c1.1 0 1.8.6 1.5 1.7-.3 1.6-1.3 2.3-2.8 2.3h-1.3L16 15.7h-1.2l1.4-7.5h1.2l-.6 3.2h-.9l.3-1.2zm1.5 0-.3 1.6h.9c.7 0 1.2-.3 1.3-1 .1-.5-.2-.8-.9-.8h-1zm-5.9-3.5h1.2l-.5 2.5h1.3l-.2.8h-1.3l-.5 2.5H8.6l.5-2.5H7.8l.2-.8h1.2l.6-2.5z"/>
+            </svg>
+            <span class="tech-logo-label">PHP</span>
+          </div>
+
+          <!-- MySQL -->
+          <div class="tech-logo">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path fill="#4479a1" d="M16.5 0C11 0 7 5.4 7 12s4 12 9.5 12S25 18.6 25 12 21 0 16.5 0z" transform="scale(.9) translate(.5)"/>
+              <path fill="#fff" d="M9 7h1.5v4.5L12 7h1.6v6H12V8.5L10.3 13H9.4L7.8 8.5V13H6.5V7H9zm7 0h1.5v5h2.5v1H16V7z"/>
+              <path fill="#00758f" d="M2 16.5c0 .8.6 1.5 1.5 1.5H5v-1H3.5a.5.5 0 0 1-.5-.5V8.5a.5.5 0 0 1 .5-.5H5V7H3.5A1.5 1.5 0 0 0 2 8.5v8z"/>
+            </svg>
+            <span class="tech-logo-label">MySQL</span>
+          </div>
+
+          <!-- Linux -->
+          <div class="tech-logo">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path fill="#fcc624" d="M12 1C8.7 1 6 3.7 6 7c0 2 .9 3.7 2.2 4.9-.3.5-.7 1.3-.7 2.1 0 1.5.7 2.8 1.8 3.6-.4.5-.8 1.2-.8 2 0 1.7 1.3 3 3 3h1c1.7 0 3-1.3 3-3 0-.8-.4-1.5-.8-2 1.1-.8 1.8-2.1 1.8-3.6 0-.8-.4-1.6-.7-2.1C17.1 10.7 18 9 18 7c0-3.3-2.7-6-6-6z"/>
+              <path fill="#1c1e2e" d="M10 15.5c-.3 0-.5-.2-.5-.5v-1c0-.3.2-.5.5-.5s.5.2.5.5v1c0 .3-.2.5-.5.5zm4 0c-.3 0-.5-.2-.5-.5v-1c0-.3.2-.5.5-.5s.5.2.5.5v1c0 .3-.2.5-.5.5zm-2 2c-.8 0-1.5-.3-2-.8l.7-.7c.3.3.8.5 1.3.5s1-.2 1.3-.5l.7.7c-.5.5-1.2.8-2 .8z"/>
+            </svg>
+            <span class="tech-logo-label">Linux</span>
+          </div>
+
+          <!-- Git -->
+          <div class="tech-logo">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path fill="#f05032" d="M23.5 11.5 12.5.5a1.7 1.7 0 0 0-2.4 0L7.8 2.8l3 3c.7-.2 1.5 0 2 .6.6.6.8 1.4.5 2.1l3 3c.7-.2 1.5 0 2 .6.9.9.9 2.3 0 3.2-.9.9-2.3.9-3.2 0-.6-.6-.8-1.5-.5-2.2l-2.8-2.8v7.4c.2.1.4.3.6.5.9.9.9 2.3 0 3.2-.9.9-2.3.9-3.2 0-.9-.9-.9-2.3 0-3.2.2-.2.5-.4.8-.5V9.7c-.3-.1-.6-.3-.8-.5a2.3 2.3 0 0 1-.5-2.3L5.6 4l-5 5a1.7 1.7 0 0 0 0 2.4l11 11a1.7 1.7 0 0 0 2.4 0L23.5 14a1.7 1.7 0 0 0 0-2.5z"/>
+            </svg>
+            <span class="tech-logo-label">Git</span>
+          </div>
+
+          <!-- Python -->
+          <div class="tech-logo">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path fill="#3776ab" d="M11.9 2C8.6 2 8.8 3.4 8.8 3.4V5h3.2v.5H6C4.3 5.5 3 6.9 3 9.1c0 2.3 1.1 3.4 2.8 3.4H7V11c0-1.5 1.1-2.5 2.7-2.5h4.4c1.4 0 2.4-1 2.4-2.3V3.8C16.5 2.5 15.3 2 11.9 2zM10 4.2a.8.8 0 1 1 0 1.6.8.8 0 0 1 0-1.6z"/>
+              <path fill="#ffd43b" d="M12.1 22c3.3 0 3.1-1.4 3.1-1.4V19h-3.2v-.5H18c1.7 0 3-1.4 3-3.6 0-2.3-1.1-3.4-2.8-3.4H17v1.5c0 1.5-1.1 2.5-2.7 2.5H9.9c-1.4 0-2.4 1-2.4 2.3v3.5c0 1.3 1.2 1.7 4.6 1.7zm1.9-2.2a.8.8 0 1 1 0-1.6.8.8 0 0 1 0 1.6z"/>
+            </svg>
+            <span class="tech-logo-label">Python</span>
+          </div>
+
+          <!-- VS Code -->
+          <div class="tech-logo">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path fill="#007acc" d="M23.2 2.8 17 .1l-6.5 6L4 2.4.8 4 0 19.5l4 2.1 6.5-4 6.2 5.9 6.5-2.7V2.8zM4 17.2l-1.5-.8V7l1.5-.7v11zm6.8.4L5.5 12l5.3-5.6V17.6zm6.4.4-5.6-5 2-2 3.6 2V7.4l-3.6 2-2-2 5.6-5v15.6zm2.3-.8-1.5.8V6.3l1.5.7v10.2z"/>
+            </svg>
+            <span class="tech-logo-label">VS Code</span>
+          </div>
+
+          <!-- GLPI -->
+          <div class="tech-logo">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <rect width="24" height="24" rx="4" fill="#1a6496"/>
+              <text x="12" y="17" text-anchor="middle" font-family="monospace" font-weight="700" font-size="9" fill="#fff">GLPI</text>
+            </svg>
+            <span class="tech-logo-label">GLPI</span>
+          </div>
+
+          <!-- Doublons pour boucle infinie fluide -->
+          <div class="tech-logo">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill="#1c1e2e" d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3z"/>
+            </svg>
+            <span class="tech-logo-label">GitHub</span>
+          </div>
+          <div class="tech-logo">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path fill="#e34f26" d="M1.5 0h21l-1.9 21.6L12 24l-8.6-2.4L1.5 0zm7.1 10.2-.2-2.5H17l-.2 2.1-4.8 1.3 4.6-.1-.3 3.4-4.3 1.2-4.3-1.2-.3-3h2.5l.1 1.4 2 .5 2-.5.2-2.3-7.6.1zm-.5-5.1.2 2.1h9.4l.2-2.1H8.1z"/>
+            </svg>
+            <span class="tech-logo-label">HTML5</span>
+          </div>
+          <div class="tech-logo">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path fill="#1572b6" d="M1.5 0h21l-1.9 21.6L12 24l-8.6-2.4L1.5 0zm13.9 14.7-4.6 1.3-4.5-1.3-.3-3.3h2.5l.1 1.5 2.2.6 2.2-.6.2-2.7H7.9l-.2-2.4h8.3l.2-2.2H5.8l-.2-2h12.8l-.8 9.1z"/>
+            </svg>
+            <span class="tech-logo-label">CSS3</span>
+          </div>
+          <div class="tech-logo">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <rect width="24" height="24" rx="2" fill="#f7df1e"/>
+              <path fill="#1c1e2e" d="M6.5 18.5c.4.7 1 1.2 2 1.2 1.1 0 1.7-.5 1.7-1.3 0-.9-.7-1.2-1.8-1.7l-.6-.3c-1.8-.8-3-1.7-3-3.7 0-1.8 1.4-3.2 3.6-3.2 1.6 0 2.7.6 3.5 2l-1.9 1.2c-.4-.7-.9-1-1.6-1-.7 0-1.2.4-1.2 1 0 .7.4 1 1.5 1.4l.6.3c2.1.9 3.3 1.8 3.3 3.9 0 2.2-1.7 3.4-4 3.4-2.2 0-3.7-1.1-4.4-2.5l2.3-1.7zm9 .3c.3.6.6.9 1.2.9.6 0 1-.2 1-1.2V9.8h2.5v8.8c0 2.3-1.3 3.3-3.3 3.3-1.8 0-2.9-.9-3.4-2l2-1.1z"/>
+            </svg>
+            <span class="tech-logo-label">JavaScript</span>
+          </div>
+          <div class="tech-logo">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path fill="#f89820" d="M8.9 17.5s-.9.5.6.7c1.8.2 2.8.2 4.8-.2 0 0 .5.3 1.3.6-4.6 2-10.4-.1-6.7-1.1zm-.5-2.4s-1 .7.5.9c2 .2 3.5.2 6.2-.3 0 0 .4.4 1 .5-5.5 1.6-11.6.1-7.7-1.1z"/>
+              <path fill="#ea2d2e" d="M13.3 9.4c1.1 1.3-.3 2.4-.3 2.4s2.9-1.5 1.5-3.3c-1.2-1.7-2.2-2.6 3-5.5 0 0-8.2 2-4.2 6.4z"/>
+              <path fill="#f89820" d="M19.3 19.1s.7.6-.7.9c-2.6.8-10.7 1-13 0-.8-.3.7-.8 1.2-.9.5-.1.8-.1.8-.1-.9-.6-6 1.3-2.6 1.9 9.4 1.5 17.1-.7 14.3-1.8zm-10-7.2s-4.2 1-1.5 1.4c1.1.1 3.4.1 5.4-.1 1.7-.2 3.4-.5 3.4-.5s-.6.3-1 .5c-4.1 1.1-12 .6-9.7-.5 2-1 3.4-.8 3.4-.8zm7.4 4.1c4.2-2.2 2.3-4.3.9-4 1.4-.2 3.4 1.8.9 3.3-.1.1-.9.7-.9.7l.9-.5c1.4-.8 2-1.8-.9-4"/>
+              <path fill="#ea2d2e" d="M14.8 0s2.4 2.4-2.3 6.1c-3.8 3-1.8 4.7 0 6.6C10 10.5 7.5 9 9.3 7.1 11.9 4.5 16.2 2.6 14.8 0z"/>
+              <path fill="#f89820" d="M9.7 21.8c4 .3 10.2-.2 10.3-1.2 0 0-.3.7-3.3 1.2-3.4.6-7.5.5-10-.1 0 0 .5.4 3 .1z"/>
+            </svg>
+            <span class="tech-logo-label">Java</span>
+          </div>
+          <div class="tech-logo">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <ellipse cx="12" cy="12" rx="12" ry="7.5" fill="#787cb5"/>
+              <path fill="#fff" d="M5.8 15l.7-3.8H5.2l.1-.8h4.4c1.1 0 1.8.6 1.6 1.7-.3 1.6-1.3 2.3-2.8 2.3H7.2L7 15.7H5.8L5.8 15zm1.6-1.6h1c.7 0 1.2-.3 1.3-1 .1-.5-.2-.8-.9-.8h-.9l-.5 1.8zm5.8-2.2.1-.8h4.4c1.1 0 1.8.6 1.5 1.7-.3 1.6-1.3 2.3-2.8 2.3h-1.3L16 15.7h-1.2l1.4-7.5h1.2l-.6 3.2h-.9l.3-1.2zm1.5 0-.3 1.6h.9c.7 0 1.2-.3 1.3-1 .1-.5-.2-.8-.9-.8h-1zm-5.9-3.5h1.2l-.5 2.5h1.3l-.2.8h-1.3l-.5 2.5H8.6l.5-2.5H7.8l.2-.8h1.2l.6-2.5z"/>
+            </svg>
+            <span class="tech-logo-label">PHP</span>
+          </div>
+          <div class="tech-logo">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <ellipse cx="12" cy="12" rx="11" ry="7" fill="#4479a1"/>
+              <ellipse cx="12" cy="12" rx="7" ry="4.5" fill="#00758f"/>
+              <text x="12" y="15" text-anchor="middle" font-family="monospace" font-weight="700" font-size="5.5" fill="#fff">MySQL</text>
+            </svg>
+            <span class="tech-logo-label">MySQL</span>
+          </div>
+          <div class="tech-logo">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path fill="#fcc624" d="M12 1C8.7 1 6 3.7 6 7c0 2 .9 3.7 2.2 4.9-.3.5-.7 1.3-.7 2.1 0 1.5.7 2.8 1.8 3.6-.4.5-.8 1.2-.8 2 0 1.7 1.3 3 3 3h1c1.7 0 3-1.3 3-3 0-.8-.4-1.5-.8-2 1.1-.8 1.8-2.1 1.8-3.6 0-.8-.4-1.6-.7-2.1C17.1 10.7 18 9 18 7c0-3.3-2.7-6-6-6z"/>
+              <path fill="#1c1e2e" d="M10 15.5c-.3 0-.5-.2-.5-.5v-1c0-.3.2-.5.5-.5s.5.2.5.5v1c0 .3-.2.5-.5.5zm4 0c-.3 0-.5-.2-.5-.5v-1c0-.3.2-.5.5-.5s.5.2.5.5v1c0 .3-.2.5-.5.5zm-2 2c-.8 0-1.5-.3-2-.8l.7-.7c.3.3.8.5 1.3.5s1-.2 1.3-.5l.7.7c-.5.5-1.2.8-2 .8z"/>
+            </svg>
+            <span class="tech-logo-label">Linux</span>
+          </div>
+          <div class="tech-logo">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path fill="#f05032" d="M23.5 11.5 12.5.5a1.7 1.7 0 0 0-2.4 0L7.8 2.8l3 3c.7-.2 1.5 0 2 .6.6.6.8 1.4.5 2.1l3 3c.7-.2 1.5 0 2 .6.9.9.9 2.3 0 3.2-.9.9-2.3.9-3.2 0-.6-.6-.8-1.5-.5-2.2l-2.8-2.8v7.4c.2.1.4.3.6.5.9.9.9 2.3 0 3.2-.9.9-2.3.9-3.2 0-.9-.9-.9-2.3 0-3.2.2-.2.5-.4.8-.5V9.7c-.3-.1-.6-.3-.8-.5a2.3 2.3 0 0 1-.5-2.3L5.6 4l-5 5a1.7 1.7 0 0 0 0 2.4l11 11a1.7 1.7 0 0 0 2.4 0L23.5 14a1.7 1.7 0 0 0 0-2.5z"/>
+            </svg>
+            <span class="tech-logo-label">Git</span>
+          </div>
+          <div class="tech-logo">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path fill="#3776ab" d="M11.9 2C8.6 2 8.8 3.4 8.8 3.4V5h3.2v.5H6C4.3 5.5 3 6.9 3 9.1c0 2.3 1.1 3.4 2.8 3.4H7V11c0-1.5 1.1-2.5 2.7-2.5h4.4c1.4 0 2.4-1 2.4-2.3V3.8C16.5 2.5 15.3 2 11.9 2zM10 4.2a.8.8 0 1 1 0 1.6.8.8 0 0 1 0-1.6z"/>
+              <path fill="#ffd43b" d="M12.1 22c3.3 0 3.1-1.4 3.1-1.4V19h-3.2v-.5H18c1.7 0 3-1.4 3-3.6 0-2.3-1.1-3.4-2.8-3.4H17v1.5c0 1.5-1.1 2.5-2.7 2.5H9.9c-1.4 0-2.4 1-2.4 2.3v3.5c0 1.3 1.2 1.7 4.6 1.7zm1.9-2.2a.8.8 0 1 1 0-1.6.8.8 0 0 1 0 1.6z"/>
+            </svg>
+            <span class="tech-logo-label">Python</span>
+          </div>
+          <div class="tech-logo">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path fill="#007acc" d="M23.2 2.8 17 .1l-6.5 6L4 2.4.8 4 0 19.5l4 2.1 6.5-4 6.2 5.9 6.5-2.7V2.8zM4 17.2l-1.5-.8V7l1.5-.7v11zm6.8.4L5.5 12l5.3-5.6V17.6zm6.4.4-5.6-5 2-2 3.6 2V7.4l-3.6 2-2-2 5.6-5v15.6zm2.3-.8-1.5.8V6.3l1.5.7v10.2z"/>
+            </svg>
+            <span class="tech-logo-label">VS Code</span>
+          </div>
+          <div class="tech-logo">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <rect width="24" height="24" rx="4" fill="#1a6496"/>
+              <text x="12" y="17" text-anchor="middle" font-family="monospace" font-weight="700" font-size="9" fill="#fff">GLPI</text>
+            </svg>
+            <span class="tech-logo-label">GLPI</span>
+          </div>
+
+        </div><!-- /tech-carousel -->
+      </div><!-- /tech-carousel-wrap -->
+    </div><!-- /tech-carousel-section -->
+
+    <!-- Soft skills -->
+    <div class="soft-grid">
+      <div class="soft-card"><span class="soft-icon">⟳</span><span>Curiosité</span></div>
+      <div class="soft-card"><span class="soft-icon">◎</span><span>Autonomie</span></div>
+      <div class="soft-card"><span class="soft-icon">◈</span><span>Rigueur</span></div>
+      <div class="soft-card"><span class="soft-icon">⊕</span><span>Travail d'équipe</span></div>
+      <div class="soft-card"><span class="soft-icon">◉</span><span>Adaptabilité</span></div>
+      <div class="soft-card"><span class="soft-icon">✦</span><span>Créativité</span></div>
+    </div>
+  </section>
+
+  <!-- ══════ VEILLE ══════ -->
+  <section id="veille" class="section section--alt">
+    <div class="section-head">
+      <span class="section-num">07</span>
+      <h2 class="section-title">Veille technologique</h2>
+    </div>
+    <div class="veille-intro">
+      <p>La veille technologique me permet de rester informée des évolutions du secteur informatique. Je consulte régulièrement différentes sources pour anticiper les tendances et enrichir mes compétences.</p>
+    </div>
+    <div class="veille-grid">
+      <div class="veille-card">
+        <div class="veille-theme">🔐 Cybersécurité</div>
+        <h3 class="veille-title">Thème de veille principal</h3>
+        <p class="veille-desc">[Décris ton thème de veille, les actualités suivies, les vulnérabilités étudiées, etc.]</p>
+        <div class="veille-sources">
+          <span class="vsource">ANSSI</span><span class="vsource">CVE</span><span class="vsource">[Source]</span>
+        </div>
+      </div>
+      <div class="veille-card">
+        <div class="veille-theme">⚙️ Développement</div>
+        <h3 class="veille-title">Évolutions du développement web</h3>
+        <p class="veille-desc">[Décris les technologies suivies : frameworks, nouveaux langages, bonnes pratiques...]</p>
+        <div class="veille-sources">
+          <span class="vsource">MDN</span><span class="vsource">Dev.to</span><span class="vsource">[Source]</span>
+        </div>
+      </div>
+      <div class="veille-card">
+        <div class="veille-theme">☁️ Cloud & DevOps</div>
+        <h3 class="veille-title">Infrastructure & Cloud</h3>
+        <p class="veille-desc">[Décris les tendances cloud, conteneurisation, CI/CD que tu observes.]</p>
+        <div class="veille-sources">
+          <span class="vsource">[Source]</span><span class="vsource">[Source]</span>
+        </div>
+      </div>
+    </div>
+    <div class="veille-outils">
+      <h3>Outils de veille utilisés</h3>
+      <div class="veille-outil-list">
+        <span class="tag">Feedly</span>
+        <span class="tag">Reddit r/netsec</span>
+        <span class="tag">Twitter / X</span>
+        <span class="tag">YouTube</span>
+        <span class="tag">[Ajouter]</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════ STAGE ══════ -->
+  <section id="stage" class="section">
+    <div class="section-head">
+      <span class="section-num">08</span>
+      <h2 class="section-title">Suivi de stage</h2>
+    </div>
+    <div class="stage-grid">
+      <div class="stage-info-card">
+        <h3>Informations stage</h3>
+        <div class="stage-row"><span class="stage-key">Entreprise</span><span class="stage-val">[Nom de l'entreprise]</span></div>
+        <div class="stage-row"><span class="stage-key">Secteur</span><span class="stage-val">[Secteur d'activité]</span></div>
+        <div class="stage-row"><span class="stage-key">Lieu</span><span class="stage-val">[Ville, Département]</span></div>
+        <div class="stage-row"><span class="stage-key">Durée</span><span class="stage-val">[Date début] → [Date fin]</span></div>
+        <div class="stage-row"><span class="stage-key">Tuteur</span><span class="stage-val">[Nom du tuteur]</span></div>
+        <div class="stage-row"><span class="stage-key">Mission principale</span><span class="stage-val">[Intitulé de la mission]</span></div>
+      </div>
+      <div class="stage-missions">
+        <h3>Missions réalisées</h3>
+        <div class="mission-item">
+          <div class="mission-num">01</div>
+          <div class="mission-content">
+            <h4>[Mission 1 — À compléter]</h4>
+            <p>[Décris la mission, les tâches réalisées, les outils utilisés et les résultats obtenus.]</p>
+            <div class="mission-tags"><span class="tag">[Outil]</span><span class="tag">[Technologie]</span></div>
+          </div>
+        </div>
+        <div class="mission-item">
+          <div class="mission-num">02</div>
+          <div class="mission-content">
+            <h4>[Mission 2 — À compléter]</h4>
+            <p>[Décris la mission.]</p>
+            <div class="mission-tags"><span class="tag">[Outil]</span></div>
+          </div>
+        </div>
+        <div class="mission-item">
+          <div class="mission-num">03</div>
+          <div class="mission-content">
+            <h4>[Mission 3 — À compléter]</h4>
+            <p>[Décris la mission.]</p>
+            <div class="mission-tags"><span class="tag">[Outil]</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="stage-bilan">
+      <h3>Bilan du stage</h3>
+      <p>[Rédige ici ton bilan de stage : ce que tu as appris, les compétences développées, les difficultés rencontrées et comment tu les as surmontées. Ce texte est important pour l'oral de BTS.]</p>
+    </div>
+  </section>
+
+  <!-- ══════ CV ══════ -->
+  <section id="cv" class="section section--alt">
+    <div class="section-head">
+      <span class="section-num">09</span>
+      <h2 class="section-title">Curriculum Vitae</h2>
+    </div>
+    <div class="cv-wrap">
+      <div class="cv-paper">
+        <div class="cv-header">
+          <div class="cv-identity">
+            <h2 class="cv-name">Sabrina Hssaïd</h2>
+            <p class="cv-title">Étudiante BTS SIO — option SLAM</p>
+          </div>
+          <div class="cv-contact-mini">
+            <span>✉ sabrinahssaid26@gmail.com</span>
+            <span>📞 0758398240</span>
+            <span>📍 Saint-Étienne, 42</span>
+            <span>⌥ github.com/sbr2610</span>
+          </div>
+        </div>
+        <div class="cv-cols">
+          <div class="cv-left">
+            <div class="cv-section">
+              <h3 class="cv-section-title">Formation</h3>
+              <div class="cv-entry">
+                <div class="cv-entry-date">2024 – 2026</div>
+                <div class="cv-entry-content"><strong>BTS SIO — SLAM</strong><span>Lycée [À compléter], Saint-Étienne</span></div>
+              </div>
+              <div class="cv-entry">
+                <div class="cv-entry-date">20XX – 20XX</div>
+                <div class="cv-entry-content"><strong>Baccalauréat</strong><span>Lycée [À compléter] — Mention [À compléter]</span></div>
+              </div>
+            </div>
+            <div class="cv-section">
+              <h3 class="cv-section-title">Expériences</h3>
+              <div class="cv-entry">
+                <div class="cv-entry-date">[Date]</div>
+                <div class="cv-entry-content"><strong>Stage — [Entreprise]</strong><span>[Ville] · [Mission principale]</span></div>
+              </div>
+              <div class="cv-entry">
+                <div class="cv-entry-date">[Date]</div>
+                <div class="cv-entry-content"><strong>[Autre expérience]</strong><span>[Détail]</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="cv-right">
+            <div class="cv-section">
+              <h3 class="cv-section-title">Compétences</h3>
+              <div class="cv-skills-list">
+                <span class="cv-skill">PHP</span><span class="cv-skill">MySQL</span>
+                <span class="cv-skill">Java</span><span class="cv-skill">HTML/CSS</span>
+                <span class="cv-skill">JavaScript</span><span class="cv-skill">Git</span>
+                <span class="cv-skill">Linux</span><span class="cv-skill">GLPI</span>
+              </div>
+            </div>
+            <div class="cv-section">
+              <h3 class="cv-section-title">Certifications</h3>
+              <div class="cv-entry">
+                <div class="cv-entry-content"><strong>SecNumacadémie</strong><span>ANSSI</span></div>
+              </div>
+              <div class="cv-entry">
+                <div class="cv-entry-content"><strong>Atelier CNIL</strong><span>RGPD & données personnelles</span></div>
+              </div>
+            </div>
+            <div class="cv-section">
+              <h3 class="cv-section-title">Langues</h3>
+              <div class="cv-entry">
+                <div class="cv-entry-content"><strong>Français</strong><span>Langue maternelle</span></div>
+              </div>
+              <div class="cv-entry">
+                <div class="cv-entry-content"><strong>Anglais</strong><span>Niveau intermédiaire (B1)</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cv-download">
+        <a href="#" class="btn-main">⬇ Télécharger le CV (PDF)</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════ CONTACT ══════ -->
+  <section id="contact" class="section">
+    <div class="section-head">
+      <span class="section-num">10</span>
+      <h2 class="section-title">Contact</h2>
+    </div>
+    <div class="contact-wrap">
+      <div class="contact-left">
+        <p class="contact-intro">Disponible pour un stage, une alternance ou toute opportunité dans le développement logiciel ou la cybersécurité. N'hésite pas à me contacter !</p>
+        <div class="contact-cards">
+          <a href="mailto:sabrina@exemple.fr" class="contact-card">
+            <span class="cc-icon">✉</span>
+            <div><span class="cc-label">Email</span><span class="cc-val">sabrinahssaid26@gmail.com</span></div>
+          </a>
+          <a href="https://github.com/sbr2610" class="contact-card" target="_blank">
+            <span class="cc-icon">⌥</span>
+            <div><span class="cc-label">GitHub</span><span class="cc-val">github.com/sbr2610</span></div>
+          </a>
+          <a href="https://linkedin.com/in/" class="contact-card" target="_blank">
+            <span class="cc-icon">in</span>
+            <div><span class="cc-label">LinkedIn</span><span class="cc-val">linkedin.com/in/[À compléter]</span></div>
+          </a>
+          <div class="contact-card">
+            <span class="cc-icon">#</span>
+            <div><span class="cc-label">Discord</span><span class="cc-val">[À compléter]</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-right">
+        <div class="contact-terminal">
+          <div class="term-bar">
+            <span class="term-dot term-r"></span>
+            <span class="term-dot term-y"></span>
+            <span class="term-dot term-g"></span>
+            <span class="term-title">terminal</span>
+          </div>
+          <div class="term-body">
+            <div class="term-line"><span class="term-prompt">$</span> whoami</div>
+            <div class="term-out">sabrina · BTS SIO SLAM · Saint-Étienne</div>
+            <div class="term-line"><span class="term-prompt">$</span> cat disponibilite.txt</div>
+            <div class="term-out">Disponible pour stage &amp; alternance</div>
+            <div class="term-line"><span class="term-prompt">$</span> echo $PASSIONS</div>
+            <div class="term-out">Web · Sécurité · Open Source</div>
+            <div class="term-line"><span class="term-prompt">$</span> <span class="term-cursor">▋</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <span>Fait avec ♥ par Sabrina Hssaïd</span>
+    <span class="footer-sep">·</span>
+    <span>BTS SIO SLAM · 2025</span>
+    <span class="footer-sep">·</span>
+    <a href="#accueil" class="footer-top">↑ Haut de page</a>
+  </footer>
+
+</main>
+
+<script src="portfolio2.js"></script>
+</body>
+</html>
