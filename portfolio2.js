@@ -134,3 +134,26 @@ window.addEventListener('load', () => {
   // s'assure que l'animation est bien lancée
   carousel.style.animationPlayState = 'running';
 });
+
+// ═══════════════════════════════════════
+//  CARNET DE BORD — ACCORDION
+//  À AJOUTER EN BAS DE portfolio2.js
+// ═══════════════════════════════════════
+document.querySelectorAll('.carnet-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const item = btn.closest('.carnet-item');
+    const isOpen = item.classList.contains('open');
+
+    // Ferme tous les autres
+    document.querySelectorAll('.carnet-item').forEach(el => {
+      el.classList.remove('open');
+      el.querySelector('.carnet-btn').setAttribute('aria-expanded', 'false');
+    });
+
+    // Ouvre celui cliqué si il était fermé
+    if (!isOpen) {
+      item.classList.add('open');
+      btn.setAttribute('aria-expanded', 'true');
+    }
+  });
+});

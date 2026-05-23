@@ -180,7 +180,7 @@
     </div>
   </section>
 
-  <!-- ══════ E5 ══════ -->
+  <!-- ══════ E5 ══════
   <section id="e5" class="section">
     <div class="section-head">
       <span class="section-num">04</span>
@@ -211,9 +211,9 @@
         <a href="#" class="situ-link">Voir le dossier →</a>
       </div>
     </div>
-  </section>
+  </section> -->
 
-  <!-- ══════ E6 ══════ -->
+  <!-- ══════ E6 ══════
   <section id="e6" class="section section--alt">
     <div class="section-head">
       <span class="section-num">05</span>
@@ -244,7 +244,7 @@
         <a href="#" class="situ-link">Voir le dossier →</a>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!-- ══════ COMPÉTENCES ══════ -->
   <section id="competences" class="section">
@@ -573,54 +573,206 @@
   </section>
 
   <!-- ══════ STAGE ══════ -->
-  <section id="stage" class="section">
-    <div class="section-head">
-      <span class="section-num">08</span>
-      <h2 class="section-title">Suivi de stage</h2>
+<!-- ══════ STAGE ══════ -->
+<!-- REMPLACE ENTIÈREMENT ta section id="stage" par ce bloc -->
+
+<section id="stage" class="section">
+  <div class="section-head">
+    <span class="section-num">08</span>
+    <h2 class="section-title">Suivi de stage</h2>
+  </div>
+
+  <!-- Infos stage -->
+  <div class="stage-grid">
+    <div class="stage-info-card">
+      <h3>Informations stage</h3>
+      <div class="stage-row"><span class="stage-key">Entreprise</span><span class="stage-val">CTI Talaudière</span></div>
+      <div class="stage-row"><span class="stage-key">Secteur</span><span class="stage-val">Activité Générales de Sécurité Social</span></div>
+      <div class="stage-row"><span class="stage-key">Lieu</span><span class="stage-val">Talaudière, 42350</span></div>
+      <div class="stage-row"><span class="stage-key">Durée</span><span class="stage-val">18 mai 2026 → 3 juillet 2026</span></div>
+      <div class="stage-row"><span class="stage-key">Tuteur</span><span class="stage-val">Mr David Pierrot</span></div>
+      <div class="stage-row"><span class="stage-key">Mission principale</span><span class="stage-val">[Intitulé de la mission]</span></div>
     </div>
-    <div class="stage-grid">
-      <div class="stage-info-card">
-        <h3>Informations stage</h3>
-        <div class="stage-row"><span class="stage-key">Entreprise</span><span class="stage-val">[Nom de l'entreprise]</span></div>
-        <div class="stage-row"><span class="stage-key">Secteur</span><span class="stage-val">[Secteur d'activité]</span></div>
-        <div class="stage-row"><span class="stage-key">Lieu</span><span class="stage-val">[Ville, Département]</span></div>
-        <div class="stage-row"><span class="stage-key">Durée</span><span class="stage-val">[Date début] → [Date fin]</span></div>
-        <div class="stage-row"><span class="stage-key">Tuteur</span><span class="stage-val">[Nom du tuteur]</span></div>
-        <div class="stage-row"><span class="stage-key">Mission principale</span><span class="stage-val">[Intitulé de la mission]</span></div>
+
+  <!-- ══ CARNET DE BORD ══ -->
+  <div class="carnet-bord">
+    <div class="carnet-header">
+      <h3 class="carnet-title">Carnet de bord</h3>
+      <p class="carnet-sub">Un rapport par semaine — clique pour dérouler</p>
+    </div>
+
+    <div class="carnet-list">
+
+      <!-- SEMAINE 1 -->
+      <div class="carnet-item open" id="semaine-1">
+        <button class="carnet-btn" aria-expanded="true" aria-controls="carnet-body-1">
+          <div class="carnet-btn-left">
+            <span class="carnet-num">S01</span>
+            <div class="carnet-btn-info">
+              <span class="carnet-week-title">Semaine 1</span>
+              <span class="carnet-dates">18 – 22 mai 2026</span>
+            </div>
+          </div>
+          <div class="carnet-btn-right">
+            <span class="carnet-tags-preview">
+              <span class="tag">Linux</span>
+              <span class="tag">Docker</span>
+              <span class="tag">Intégration</span>
+            </span>
+            <span class="carnet-chevron">▾</span>
+          </div>
+        </button>
+
+        <div class="carnet-body" id="carnet-body-1">
+          <div class="carnet-body-inner">
+
+            <div class="carnet-section">
+              <h4 class="carnet-section-title">👥 Intégration & découverte</h4>
+              <p>Accueil au sein du CTI de La Talaudière, présentation de l'équipe et découverte des projets en cours. Prise en main de l'environnement de travail et des outils internes.</p>
+            </div>
+
+            <div class="carnet-section">
+              <h4 class="carnet-section-title">🐧 TP Remise à niveau Linux</h4>
+              <p>Réalisation d'un TP de remise à niveau sur Linux : navigation dans le terminal, gestion des fichiers, des droits et des utilisateurs, initiation aux scripts shell.</p>
+              <div class="carnet-tags"><span class="tag">Linux</span><span class="tag">Terminal</span></div>
+            </div>
+
+            <div class="carnet-section">
+              <h4 class="carnet-section-title">🐳 Initiation à Docker</h4>
+              <p>Découverte des bases de la conteneurisation : images, conteneurs, volumes. Premières commandes Docker.</p>
+              <div class="carnet-tags"><span class="tag">Docker Desktop</span><span class="tag">Linux</span></div>
+            </div>
+
+            <div class="carnet-bilan-mini">
+              <span class="carnet-bilan-label">✦ Bilan</span>
+              <p>Bonne prise en main de l'environnement. L'intégration dans l'équipe s'est bien passée. Les bases Linux et Docker sont posées pour la suite du stage.</p>
+            </div>
+
+          </div>
+        </div>
       </div>
-      <div class="stage-missions">
-        <h3>Missions réalisées</h3>
-        <div class="mission-item">
-          <div class="mission-num">01</div>
-          <div class="mission-content">
-            <h4>[Mission 1 — À compléter]</h4>
-            <p>[Décris la mission, les tâches réalisées, les outils utilisés et les résultats obtenus.]</p>
-            <div class="mission-tags"><span class="tag">[Outil]</span><span class="tag">[Technologie]</span></div>
+      <!-- FIN SEMAINE 1 -->
+
+      <!-- SEMAINE 2 — modèle vierge à dupliquer -->
+      <div class="carnet-item" id="semaine-2">
+        <button class="carnet-btn" aria-expanded="false" aria-controls="carnet-body-2">
+          <div class="carnet-btn-left">
+            <span class="carnet-num">S02</span>
+            <div class="carnet-btn-info">
+              <span class="carnet-week-title">Semaine 2</span>
+              <span class="carnet-dates">26 – 30 mai 2026</span>
+            </div>
           </div>
-        </div>
-        <div class="mission-item">
-          <div class="mission-num">02</div>
-          <div class="mission-content">
-            <h4>[Mission 2 — À compléter]</h4>
-            <p>[Décris la mission.]</p>
-            <div class="mission-tags"><span class="tag">[Outil]</span></div>
+          <div class="carnet-btn-right">
+            <span class="carnet-tags-preview carnet-soon">À venir</span>
+            <span class="carnet-chevron">▾</span>
           </div>
-        </div>
-        <div class="mission-item">
-          <div class="mission-num">03</div>
-          <div class="mission-content">
-            <h4>[Mission 3 — À compléter]</h4>
-            <p>[Décris la mission.]</p>
-            <div class="mission-tags"><span class="tag">[Outil]</span></div>
+        </button>
+        <div class="carnet-body" id="carnet-body-2">
+          <div class="carnet-body-inner carnet-empty">
+            <p>Cette semaine n'est pas encore renseignée. Reviens vendredi ! 📅</p>
           </div>
         </div>
       </div>
-    </div>
-    <div class="stage-bilan">
-      <h3>Bilan du stage</h3>
-      <p>[Rédige ici ton bilan de stage : ce que tu as appris, les compétences développées, les difficultés rencontrées et comment tu les as surmontées. Ce texte est important pour l'oral de BTS.]</p>
-    </div>
-  </section>
+      <!-- FIN SEMAINE 2 -->
+
+      <!-- SEMAINE 3 -->
+      <div class="carnet-item" id="semaine-3">
+        <button class="carnet-btn" aria-expanded="false" aria-controls="carnet-body-3">
+          <div class="carnet-btn-left">
+            <span class="carnet-num">S03</span>
+            <div class="carnet-btn-info">
+              <span class="carnet-week-title">Semaine 3</span>
+              <span class="carnet-dates">2 – 6 juin 2026</span>
+            </div>
+          </div>
+          <div class="carnet-btn-right">
+            <span class="carnet-tags-preview carnet-soon">À venir</span>
+            <span class="carnet-chevron">▾</span>
+          </div>
+        </button>
+        <div class="carnet-body" id="carnet-body-3">
+          <div class="carnet-body-inner carnet-empty">
+            <p>Cette semaine n'est pas encore renseignée. Reviens vendredi ! 📅</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- SEMAINE 4 -->
+      <div class="carnet-item" id="semaine-4">
+        <button class="carnet-btn" aria-expanded="false" aria-controls="carnet-body-4">
+          <div class="carnet-btn-left">
+            <span class="carnet-num">S04</span>
+            <div class="carnet-btn-info">
+              <span class="carnet-week-title">Semaine 4</span>
+              <span class="carnet-dates">9 – 13 juin 2026</span>
+            </div>
+          </div>
+          <div class="carnet-btn-right">
+            <span class="carnet-tags-preview carnet-soon">À venir</span>
+            <span class="carnet-chevron">▾</span>
+          </div>
+        </button>
+        <div class="carnet-body" id="carnet-body-4">
+          <div class="carnet-body-inner carnet-empty">
+            <p>Cette semaine n'est pas encore renseignée. Reviens vendredi ! 📅</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- SEMAINE 5 -->
+      <div class="carnet-item" id="semaine-5">
+        <button class="carnet-btn" aria-expanded="false" aria-controls="carnet-body-5">
+          <div class="carnet-btn-left">
+            <span class="carnet-num">S05</span>
+            <div class="carnet-btn-info">
+              <span class="carnet-week-title">Semaine 5</span>
+              <span class="carnet-dates">16 – 20 juin 2026</span>
+            </div>
+          </div>
+          <div class="carnet-btn-right">
+            <span class="carnet-tags-preview carnet-soon">À venir</span>
+            <span class="carnet-chevron">▾</span>
+          </div>
+        </button>
+        <div class="carnet-body" id="carnet-body-5">
+          <div class="carnet-body-inner carnet-empty">
+            <p>Cette semaine n'est pas encore renseignée. Reviens vendredi ! 📅</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- SEMAINE 6 -->
+      <div class="carnet-item" id="semaine-6">
+        <button class="carnet-btn" aria-expanded="false" aria-controls="carnet-body-6">
+          <div class="carnet-btn-left">
+            <span class="carnet-num">S06</span>
+            <div class="carnet-btn-info">
+              <span class="carnet-week-title">Semaine 6</span>
+              <span class="carnet-dates">23 juin – 3 juillet 2026</span>
+            </div>
+          </div>
+          <div class="carnet-btn-right">
+            <span class="carnet-tags-preview carnet-soon">À venir</span>
+            <span class="carnet-chevron">▾</span>
+          </div>
+        </button>
+        <div class="carnet-body" id="carnet-body-6">
+          <div class="carnet-body-inner carnet-empty">
+            <p>Cette semaine n'est pas encore renseignée. Reviens vendredi ! 📅</p>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /carnet-list -->
+  </div><!-- /carnet-bord -->
+
+  <div class="stage-bilan">
+    <h3>Bilan du stage</h3>
+    <p>[Rédige ici ton bilan de stage : ce que tu as appris, les compétences développées, les difficultés rencontrées et comment tu les as surmontées. Ce texte est important pour l'oral de BTS.]</p>
+  </div>
+
+</section>
 
   <!-- ══════ CV ══════ -->
   <section id="cv" class="section section--alt">
