@@ -588,7 +588,7 @@
       <div class="stage-row"><span class="stage-key">Lieu</span><span class="stage-val">Talaudière, 42350</span></div>
       <div class="stage-row"><span class="stage-key">Durée</span><span class="stage-val">18 mai 2026 → 3 juillet 2026</span></div>
       <div class="stage-row"><span class="stage-key">Tuteur</span><span class="stage-val">Mr David Pierrot</span></div>
-      <div class="stage-row"><span class="stage-key">Mission principale</span><span class="stage-val">DSRD</span></div>
+      <div class="stage-row"><span class="stage-key">Pôle</span><span class="stage-val">DSRD</span></div>
     </div>
 
   <!-- ══ CARNET DE BORD ══ -->
@@ -839,13 +839,58 @@
 </div>
 <!-- FIN SEMAINE 6-->
 
+<!-- SEMAINE 7 -->
+<div class="carnet-item" id="semaine-7">
+  <button class="carnet-btn" aria-expanded="false" aria-controls="carnet-body-7">
+    <div class="carnet-btn-left">
+      <span class="carnet-num">S07</span>
+      <div class="carnet-btn-info">
+        <span class="carnet-week-title">Semaine 7</span>
+        <span class="carnet-dates">29 juin – 03 juillet 2026</span>
+      </div>
+    </div>
+    <div class="carnet-btn-right">
+      <span class="carnet-tags-preview">
+        <span class="tag">Symfony</span>
+        <span class="tag">PHP</span>
+      </span>
+      <span class="carnet-chevron">▾</span>
+    </div>
+  </button>
+  <div class="carnet-body" id="carnet-body-7">
+    <div class="carnet-body-inner">
+      <div class="carnet-section">
+        <h4 class="carnet-section-title">Finalisation de la migration indicateurs-production</h4>
+        <p>Finalisation de la migration PHP vers Symfony. J'ai mis en place un export PDF serveur avec dompdf, plus propre que la solution jsPDF utilisée au départ. J'en ai profité pour refactoriser le code et nettoyer les styles. Les 4 pages de l'application sont maintenant terminées.</p>
+        <div class="carnet-tags"><span class="tag">Symfony</span><span class="tag">PHP</span><span class="tag">dompdf</span><span class="tag">Highcharts</span><span class="tag">CKEditor</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- FIN SEMAINE 7-->
+
+
     </div><!-- /carnet-list -->
   </div><!-- /carnet-bord -->
 
-  <div class="stage-bilan">
-    <h3>Bilan du stage</h3>
-    <p>[Rédige ici ton bilan de stage : ce que tu as appris, les compétences développées, les difficultés rencontrées et comment tu les as surmontées. Ce texte est important pour l'oral de BTS.]</p>
-  </div>
+<div class="stage-bilan">
+  <h3>Bilan du stage</h3>
+  <p>
+    Ce stage de 7 semaines au CTI de La Talaudière m'a permis de monter en compétences sur des technologies que je ne maîtrisais pas encore, notamment Symfony et Docker. J'ai démarré par une remise à niveau Linux et une initiation à la conteneurisation, avant de me lancer dans deux projets concrets en PHP/Symfony.
+  </p>
+  <p>
+    Le premier projet, <strong>Ma Borne</strong>, m'a appris à concevoir une application de A à Z : modélisation de la base de données, gestion des rôles et des droits, règles métier, et affichage dynamique avec JavaScript. Le second, la migration de l'application <strong>indicateurs-production</strong>, m'a confronté à une contrainte réelle : reprendre un code existant, le comprendre et le restructurer proprement sous Symfony, avec notamment la mise en place d'un export PDF côté serveur.
+  </p>
+  <p>
+    J'ai rencontré des difficultés, surtout en début de stage avec la prise en main de Symfony, et lors de la migration où des conflits de base de données m'ont obligé à tout reconfigurer. Ces blocages m'ont appris à chercher par moi-même, à lire la documentation et à ne pas hésiter à demander de l'aide à l'équipe.
+  </p>
+  <p>
+    Ce stage m'a donné une vision concrète du travail en entreprise et renforcé ma rigueur dans l'organisation du code. Il confirme mon intérêt pour le développement .
+  </p>
+</div>
+
 
 </section>
 
